@@ -23,5 +23,7 @@
         <div class='pasinate'>
             {{ $posts->links() }}
         </div>
+        <div class='footer'>
+            <a href="/">戻る</a>
     </body>
 </html>
