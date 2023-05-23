@@ -33,3 +33,4 @@ Route::get('/posts/{post}/edit', [PostController::class, 'edit']);
 Route::put('/posts/{post}', [PostController::class, 'update']);
 
 Route::get('/categories/{category}', [CategoryController::class,'index']);
+
