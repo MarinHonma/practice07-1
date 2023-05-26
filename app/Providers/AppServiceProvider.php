@@ -20,6 +20,8 @@ class AppServiceProvider extends ServiceProvider
     
     public function boot(){
        Paginator::useBootstrap(); 
+       \URL::forceScheme('https');
+       $this->app['request']->server->set('HTTPS','on');
        // Paginator::useBootstrapFive();
         //または Paginator::useBootstrapFour();　
     }
